@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
@@ -23,6 +22,7 @@ SECRET_KEY = 'oj-23*8+%26c11@k-w@m$g3&@9&i4z2-+w(wao0!lpybi8p%$a'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+TEMPLATE_DIRS = [os.path.join (BASE_DIR, 'templates')]
 
 ALLOWED_HOSTS = []
 
